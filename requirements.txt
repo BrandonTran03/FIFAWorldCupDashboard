@@ -4,3 +4,4 @@ gunicorn
 pandas
 requests
 plotly
+bs4
