@@ -1,7 +1,8 @@
-dash==2.6.0
+dash==2.9.0
+flask==2.2.2
 pandas
 gunicorn
 pandas
 requests
 plotly
-bs4
+beautifulsoup4
