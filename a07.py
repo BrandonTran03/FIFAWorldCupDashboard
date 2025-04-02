@@ -47,7 +47,7 @@ df.replace({"West Germany": "Germany"}, inplace=True)
 win_counts = df['Winner'].value_counts().reset_index()
 win_counts.columns = ['Country', 'Wins']
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, server=True)
 server = app.server
 
 app.layout = html.Div([
@@ -104,4 +104,4 @@ def update_final_result(selected_year):
     return ""
 
 if __name__ == "__main__":
-    app.run()
+    app.run_server(debug=False)
