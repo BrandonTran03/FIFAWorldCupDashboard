@@ -47,7 +47,7 @@ df.replace({"West Germany": "Germany"}, inplace=True)
 win_counts = df['Winner'].value_counts().reset_index()
 win_counts.columns = ['Country', 'Wins']
 
-app = dash.Dash(__name__, server=True)
+app = dash.Dash(__name__)
 server = app.server
 
 app.layout = html.Div([
